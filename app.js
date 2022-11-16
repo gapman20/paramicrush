@@ -17,3 +17,11 @@ btnSi.addEventListener('click',function(e){
     const cancion = new Audio('img\\modo_hot.mp3');
     cancion.play();
 });
+
+botones = document.getElementsByTagName("button")
+console.log(botones);
+
+window.addEventListener('beforeunload' , (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+});
