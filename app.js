@@ -15,7 +15,14 @@ btnSi.addEventListener('click',function(e){
 
     divModoSexo.style.display = 'block';
     const cancion = new Audio('img\\modo_hot.mp3');
-    cancion.play();
+    //cancion.play();
+});
+
+divModoSexo.addEventListener('click', function(e){
+    //divModoSexo.innerHTML = "<img src='https://i.pinimg.com/originals/c5/e3/c9/c5e3c9b5260daa31f5a4ab03ff048ece.png' alt=''>";
+    const img = document.createElement("img");
+    img.src = "https://i.pinimg.com/originals/c5/e3/c9/c5e3c9b5260daa31f5a4ab03ff048ece.png" ;
+    divModoSexo.appendChild(img);
 });
 
 botones = document.getElementsByTagName("button")
